@@ -1,0 +1,19 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "Twitter bot node js application ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dienorseman/js-tweet.git"
+  },
+  "author": "redgrin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dienorseman/js-tweet/issues"
+  },
+  "homepage": "https://github.com/dienorseman/js-tweet#readme"
+}
