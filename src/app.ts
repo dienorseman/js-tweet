@@ -1,12 +1,12 @@
 import { Server } from "./presentation/server/server";
-import {envs} from "./config/plugins/envs.plugin";
+import { envs } from "./config/plugins/envs.plugin";
 
 (async () => {
-  main();
+    main();
 })();
 
 function main() {
-  console.clear();
-  console.log( envs.PORT )
-//  Server.start();
+    console.clear();
+    console.log(envs.PORT)
+    Server.start();
 }
