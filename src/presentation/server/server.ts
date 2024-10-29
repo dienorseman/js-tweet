@@ -4,6 +4,7 @@ import { CheckService } from "../../domain/use-cases/checks/check-service";
 import { LogRepositoryImplementation } from "../../infrastrcuture/repositories/log.repository.implementation";
 import { FileSystemDatasource } from "../../infrastrcuture/datasources/file-system.datasource";
 import { envs } from "../../config/plugins/envs.plugin";
+import { EmailService } from "../email/email.service";
 
 
 const fileSystemLogRepository = new LogRepositoryImplementation(
@@ -15,7 +16,8 @@ export class Server {
     public static start() {
         console.log("Server".green + " started...");
         // Send email
-        console.log( envs.MAILER_EMAIL, envs.MAILER_SECRET ) 
+        const emailService = new EmailService();
+        emailService.sendEmaiilWithFileSystemLogs('qwas2xz@outlook.com');
         //CronService.createJob("*/5 * * * * *", () => {
         //    new CheckService(
         //        fileSystemLogRepository,
